@@ -1,0 +1,64 @@
+<mat-toolbar color="primary">
+        Adivine el numero secreto
+        </mat-toolbar>
+
+
+
+
+<div class="background">
+        <img src="../../../assets/riddler.png" alt="">
+      </div>
+
+
+
+
+
+<div class="container">
+  <div class="panel panel-default blackboard-outer">
+      <div class="panel-body blackboard">
+
+            <mat-card class="asd">
+                    <mat-card-content>
+                            <p class="question">ADIVINE EL NUMERO SECRETO</p>
+                           
+                    
+                    </mat-card-content>   
+                 
+                </mat-card>
+         
+          
+
+
+
+          <div class="row">
+
+                <div class="col-sm-6 col-xs-8">
+                    <input type="text" class="form-control" id="answer" placeholder="Answer here!!!!" [(ngModel)]="userAnswer" x-webkit-speech onwebkitspeechchange="onVoiceAnswer()">
+                </div>
+              
+                
+                <div class="col-sm-2 col-xs-4 col-lg-6 col-xl-6">
+                    <button class="btn btn-primary center-block full-width" (click)="onSubmitAnswer()" id="submitbutton">Responder</button>
+                </div>
+                
+             <!--   <div class="col-sm-2 col-xs-4 col-lg-6 col-xl-6">
+                    <button class="btn btn-danger center-block full-width" (click)="skipQuestion()">Skip</button>
+                </div>-->
+                
+            </div>
+
+            <div>
+                    <button class="btn btn-primary center-block full-width" (click)="Volver()" id="submitbutton">Volver</button>
+                </div>
+              
+                <div>
+                    <button class="btn btn-primary center-block full-width" (click)="Salir()" id="submitbutton">Salir</button>
+                </div>
+
+
+
+      </div>
+  </div>
+</div>
+
+
