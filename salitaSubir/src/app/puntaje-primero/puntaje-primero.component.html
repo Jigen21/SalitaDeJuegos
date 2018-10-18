@@ -1,0 +1,82 @@
+<!--<table mat-table [dataSource]="dataSource"  class="mat-elevation-z8">
+
+  <ng-container matColumnDef="usuario">
+    <th mat-header-cell *matHeaderCellDef> usuario </th>
+    <td mat-cell *matCellDef="let element"> {{element.correo}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="puntaje">
+    <th mat-header-cell *matHeaderCellDef> puntaje maximo juego uno </th>
+    <td mat-cell *matCellDef="let element"> {{element.uno}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>-->
+
+<div class="background">
+    <img src="../../../assets/premios.jpg" alt="">
+  </div>
+  
+
+<div class="container">
+
+    
+    <font size="10" color=blue face="Helvetica" >
+
+<h3 >PIEDRA PAPEL O TIJERAS</h3>
+
+</font>
+
+
+<mat-card>
+  
+
+  <mat-card-content>
+
+      <font size="7" color=white face="Courier New" >
+          <table>
+            <tr>
+              <td>Usuario</td>
+              <td>Puntaje Maximo</td>
+             
+            </tr>
+          
+          </table>
+          
+          
+          
+          
+          <table *ngFor="let emp of dataSource | sort : '-uno'">
+          <tr>
+            
+          
+          
+              <td style="width: 10%;">{{emp.correo}}</td>
+              <td style="width: 5%;">{{emp.uno}}</td>
+              
+              
+            </tr>
+          </table>
+            </font>
+          
+         
+  
+  </mat-card-content>   
+</mat-card>
+
+<div>
+    <button class="btn btn-primary center-block full-width" (click)="Volver()" id="submitbutton">Volver A Jugar</button>
+</div>
+
+<div>
+    <button class="btn btn-primary center-block full-width" (click)="Salir()" id="submitbutton">Salir</button>
+</div>
+
+
+
+</div>
+
+
+
+
