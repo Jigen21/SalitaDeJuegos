@@ -3,7 +3,7 @@ import { CanActivate, ActivatedRouteSnapshot, Router } from "@angular/router";
 
 import { JwtHelperService } from "@auth0/angular-jwt";
 
-import { PageNotFoundComponent } from "../componentes/page-not-found/page-not-found.component";
+
 
 @Injectable({
   providedIn: 'root'

@@ -50,6 +50,11 @@ export class LoginComponent implements OnInit {
 
   Logear()
   {
+
+    if(!this.correo || !this.password) {
+      alert("Complete los campos");
+      return;
+    }
     //this.conexion.Logear(this.correo,this.password).subscribe(exito => console.log(exito));
     //location.href = "./principal/auto";
 
@@ -68,7 +73,8 @@ export class LoginComponent implements OnInit {
           location.href = "./salita";
         }
       },
-      error => alert("error" + JSON.stringify(error))
+      //error => alert("error" + JSON.stringify(error))
+      error => alert("El usuario ingresado no coincide con ninguno registrado")
     );
 
     

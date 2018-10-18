@@ -7,12 +7,7 @@ import { VerificarTipoService }   from "../../servicios/verificar-tipo.service";
 
 import { LoginComponent }         from "../../componentes/login/login.component";
 import { RegistroComponent }      from "../../componentes/registro/registro.component";
-import { PrincipalComponent }     from "../../componentes/principal/principal.component";
-import { CargarAutoComponent }    from "../../componentes/cargar-auto/cargar-auto.component";
-import { PedirTurnoComponent }    from "../../componentes/pedir-turno/pedir-turno.component";
-import { MostrarTurnosComponent } from "../../componentes/mostrar-turnos/mostrar-turnos.component";
-import { TodosLosTurnosComponent } from "../../componentes/todos-los-turnos/todos-los-turnos.component";
-import { PageNotFoundComponent }  from "../../componentes/page-not-found/page-not-found.component";
+
 import { SalitaComponent } from '../../salita/salita.component';
 import { PrimeroComponent } from '../../primero/primero.component';
 import { TerceroComponent } from '../../tercero/tercero.component';

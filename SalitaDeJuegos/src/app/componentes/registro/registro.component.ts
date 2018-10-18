@@ -1,6 +1,6 @@
 import { Component, OnInit }  from '@angular/core';
 
-import { Cliente }            from "../../clases/cliente";
+
 
 import { ConexionService }    from "../../servicios/conexion.service";
 
@@ -52,7 +52,8 @@ export class RegistroComponent implements OnInit {
         alert("exito" + JSON.stringify(exito));
         location.href = "./";
       },
-      error => alert(error)
+      //error => alert(error)
+      error => alert("Ese nombre de usuario ya esta en uso")
     );
   }
 }

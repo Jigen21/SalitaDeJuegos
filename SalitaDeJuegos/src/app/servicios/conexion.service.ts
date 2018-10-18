@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
 
-import { Cliente } from "../clases/cliente";
-import { Auto } from '../clases/auto';
-import { Turno } from '../clases/turno';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
@@ -19,10 +16,7 @@ export class ConexionService {
 
   constructor(private http: HttpClient) { }
 
-  public Registrar(cliente: Cliente) { return this.http.post("http://192.168.2.73:3003/clientes", { "cliente": cliente }); }
   
-  public AltaAuto(auto: Auto) { return this.http.post("http://192.168.2.73:3003/auto", { "auto": auto }, config); }
-  public PedirTurno(turno: Turno) { return this.http.post("http://192.168.2.73:3003/turnos", { "turno": turno }, config); }
   public ObtenerTurnos() { return this.http.get("http://192.168.2.73:3003/turnos", config); }
   public ObtenerClientes() { return this.http.get("http://192.168.2.73:3003/clientes", config); }
 
