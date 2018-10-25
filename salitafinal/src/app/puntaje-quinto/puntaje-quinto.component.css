@@ -1,0 +1,34 @@
+table {
+    
+   border-collapse: collapse;
+    width: 100%;
+    
+   
+    border: 4px solid black;
+
+   
+    
+}
+
+* { overflow: hidden; }
+
+/*th, td { resize: both; overflow: auto; }*/
+
+td {
+    height: 50px;
+    vertical-align: bottom;
+    padding: 15px;
+    text-align: left;
+}
+
+mat-card
+{
+    background-color: black;
+   
+}
+
+
+h1 { font-family: audiowide;
+    font-size:5vw; }
+
+    

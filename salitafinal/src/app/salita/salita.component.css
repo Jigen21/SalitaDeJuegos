@@ -1,0 +1,24 @@
+.container {
+    color: white;
+    background-color: rgba(0, 0, 0, .2) !important;
+}
+
+* { overflow: hidden; }
+
+h1 { font-family: audiowide;
+    font-size:1vw; }
+
+    /*button {
+        margin: 15px;
+        width: 16vw;
+        font-size:1vw;
+        size:100vw
+    }*/
+
+    button {
+        margin: 15px;
+        width: 30vw;
+        font-size:3vw;
+        size:200vw
+    }
+

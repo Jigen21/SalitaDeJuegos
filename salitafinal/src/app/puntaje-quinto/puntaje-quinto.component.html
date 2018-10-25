@@ -1,0 +1,70 @@
+
+
+
+<div class="background">
+  <img src="../../../assets/premios.jpg" alt="">
+</div>
+
+<div class="container">
+
+  
+    <font size="10" color=blue face="Helvetica" >
+
+
+
+<h1>PUNTAJE DE TODOS</h1>
+
+
+</font>
+
+<mat-card>
+
+
+  <mat-card-content>
+
+<font size="3" color=white face="Courier New" >
+
+
+<table>
+  <tr>
+    <td>Usuario</td>
+    <td>Piedra papel o tijeras</td>
+    <td>Memoria</td>
+    <td>Cuentas aritmeticas</td>
+    <td>adivina el numero</td>
+   
+  </tr>
+
+</table>
+
+
+<table *ngFor="let emp of dataSource | sort : '-dos'">
+<tr>
+  
+
+
+    <td style="width: 20%;">{{emp.correo}}</td>
+    <td style="width: 20%;">{{emp.uno}}</td>
+    <td style="width: 20%;">{{emp.dos}}</td>
+    <td style="width: 20%;">{{emp.tres}}</td>
+    <td style="width: 20%;">{{emp.cuatro}}</td>
+
+    
+    
+  </tr>
+</table>
+
+</font>
+
+</mat-card-content>
+
+
+</mat-card>
+
+
+
+<div>
+  <button class="btn btn-primary center-block full-width" (click)="Volver()" id="submitbutton">Volver</button>
+</div>
+
+</div>

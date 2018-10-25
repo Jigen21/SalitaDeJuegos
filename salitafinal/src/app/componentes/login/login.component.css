@@ -1,0 +1,46 @@
+.container {
+    color: white;
+    background-color: rgba(0, 0, 0, .2) !important;
+}
+
+.botones > button {
+    margin: 15px;
+    color:black;
+    size:50px;
+}
+
+
+
+* { overflow: hidden; }
+
+/*.container {
+    color: white;
+    background-color: rgba(0, 0, 0, .2) !important;
+}*/
+
+h1 { font-family: audiowide;
+    font-size:2vw; }
+
+a:visited { color: #B3DCEE; }
+
+input {
+    width: 16vw;
+    border-radius: 0;
+    margin: 0 15px 0 0;
+    margin:15px;
+}
+
+input:focus {
+    transform: none;
+}
+
+button {
+    margin: 15px;
+    width: 16vw;
+    font-size:2vw;
+}
+
+
+
+
+

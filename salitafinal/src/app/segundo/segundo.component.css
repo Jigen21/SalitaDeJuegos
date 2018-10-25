@@ -1,0 +1,29 @@
+table { width: 100%; }
+
+* { overflow: hidden; }
+
+input {
+    width: 16vw;
+    border-radius: 0;
+    margin: 0 15px 0 0;
+    margin:15px;
+}
+
+input:focus {
+    transform: none;
+}
+
+/*button {
+    margin: 15px;
+}*/
+
+button {
+    margin: 15px;
+    width: 30vw;
+    font-size:3vw;
+    size:200vw
+}
+
+mat-card{
+    user-select: none;
+}
