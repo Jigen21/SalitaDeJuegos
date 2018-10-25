@@ -1,0 +1,17 @@
+.question
+{
+    size:100px;
+
+}
+
+p  {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 400%;
+    border: 3px solid black;
+    padding: 30px;
+}
+
+mat-card{
+    background-color: black;
+}
